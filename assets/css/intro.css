@@ -1,0 +1,264 @@
+/*
+Copyright (c) 2011, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.9.0
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
+
+#layout {
+	overflow:hidden;
+	*zoom:1;
+	border:1px solid #000;
+	width:930px;
+	margin:0 auto;
+	background:#81c46c;
+	padding:0px 10px 40px 10px;
+}
+
+#debug {
+	background:pink;
+	width:auto;
+	border:1px solid #333;
+}	
+#banner {
+	height:200px;
+}
+#slogon {
+	
+}
+#content {
+	overflow:hidden;
+	margin-bottom:10px;
+}
+#video {
+	width:613px;
+	float:left;
+	height:558px;
+	margin-right:9px;
+	overflow:hidden;
+}
+#video h4 {
+	font-size:14px;
+	color:#000;
+	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+	padding-left:13px;
+	line-height:28px;
+	height:28px;
+}
+#embed {
+	padding:0px 7px;
+	*zoom:1;
+}
+#intro {
+	float:left;
+	width:305px;
+}
+
+#intro #vote {
+	margin-bottom:10px;
+}
+
+#intro .description {
+	font-size:14px;
+	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+	color:#000;
+	line-height:16px;
+	padding:13px 13px 11px 13px;	
+
+}
+#intro .description p {
+	text-indent:29px;
+}
+#gallery {
+	min-height:345px;
+	_height:345px;
+	margin-bottom:10px;
+	position:relative;
+	background:#f5f5f5;
+}
+
+#gallery #btn_prev {
+	position:absolute;
+	height:68px;
+	top:150px;
+	left:0px;
+	background:url("../images/btn_prev.jpg") center center no-repeat;
+	width:68px;
+	cursor:pointer;
+}
+#gallery #btn_next {
+	width:68px;
+	right:0px;
+	top:150px;
+	height:68px;
+	position:absolute;
+	background:url("../images/btn_next.jpg") center center no-repeat;
+	cursor:pointer;
+}
+
+#gallery .overflow {
+	overflow:hidden;
+	width:800px;
+	margin:0 auto;
+}
+
+#gallery .overflow ul {
+	margin-top:18px;
+	*zoom:1;
+}
+
+
+#gallery .overflow ul li {
+	margin:0px 9px;
+	_display:inline;
+	float:left;
+}
+
+#gallery .overflow ul li .pic {
+	padding:4px;
+	background:#fff;
+	border:1px solid #bfc1be;
+}
+
+#gallery .overflow ul li .txt {
+	text-align:center;
+	font-size:14px;
+	color:#000;
+	margin-top:13px;
+	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+}
+
+
+#reaction {
+	overflow:hidden;
+}
+
+#message {
+	float:left;
+	width:613px;
+	margin-right:10px;
+}
+#message .control {
+	padding:10px;
+}
+
+#weibo {
+	float:left;
+	width:305px;
+}
+
+#yang {
+	
+}
+
+.grid {
+	border:1px solid #47723a;
+	background:#fff;
+}
+.hd_01 {
+	background:url("../images/bg_hd_01.jpg") top center repeat-x;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	padding-left:6px;
+	border-bottom:1px solid #e7e7e7;
+	font-weight:normal;
+	font-size:18px;
+	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+}
+.hd_01.spe {
+	border:none;
+	height:31px;
+	overflow:hidden;
+}
+
+
+#jquery-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+}
+#jquery-lightbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+}
+#jquery-lightbox a img { border: none; }
+#lightbox-container-image-box {
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+#lightbox-container-image { padding: 10px; }
+#lightbox-loading {
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+}
+#lightbox-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {
+	width: 49%;
+	height: 100%;
+	zoom: 1;
+	display: block;
+}
+#lightbox-nav-btnPrev { 
+	left: 0; 
+	float: left;
+}
+#lightbox-nav-btnNext { 
+	right: 0; 
+	float: right;
+}
+#lightbox-container-image-data-box {
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	overflow: auto;
+	width: 100%;
+	padding: 0 10px 0;
+}
+#lightbox-container-image-data {
+	padding: 0 10px; 
+	color: #666; 
+}
+#lightbox-container-image-data #lightbox-image-details { 
+	width: 70%; 
+	float: left; 
+	text-align: left; 
+}	
+#lightbox-image-details-caption { font-weight: bold; }
+#lightbox-image-details-currentNumber {
+	display: block; 
+	clear: left; 
+	padding-bottom: 1.0em;	
+}			
+#lightbox-secNav-btnClose {
+	width: 66px; 
+	float: right;
+	padding-bottom: 0.7em;	
+}
