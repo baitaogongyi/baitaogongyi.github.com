@@ -12,12 +12,12 @@ body {
 
 #layout {
 	overflow:hidden;
-	*zoom:1;
 	border:1px solid #000;
 	width:930px;
 	margin:10px auto;
 	padding:310px 10px 40px 10px;
-	background:url("../images/banner.jpg") center top no-repeat #81c46c;;
+	background:url("../images/banner.jpg") center top no-repeat #81c46c;
+	*zoom:1;
 }
 
 #debug {
@@ -28,6 +28,7 @@ body {
 #content {
 	overflow:hidden;
 	margin-bottom:10px;
+	*zoom:1;
 }
 #video {
 	width:613px;
