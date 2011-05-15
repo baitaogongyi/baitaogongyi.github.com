@@ -32,7 +32,7 @@ body {
 #video {
 	width:613px;
 	float:left;
-	height:558px;
+	height:598px;
 	margin-right:9px;
 	overflow:hidden;
 }
@@ -61,7 +61,7 @@ body {
 	font-size:14px;
 	font-family:"宋体","Microsoft Yahei","Arial","Tahoma";
 	color:#000;
-	line-height:16px;
+	line-height:20px;
 	padding:11px 13px 11px 13px !important;
 	+padding:16px 13px 16px 13px;
 
