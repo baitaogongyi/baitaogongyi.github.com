@@ -6,6 +6,10 @@ version: 2.9.0
 */
 html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,button,caption,cite,code,dfn,em,input,optgroup,option,select,strong,textarea,th,var{font:inherit}del,ins{text-decoration:none}li{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:baseline}sub{vertical-align:baseline}legend{color:#000}
 
+body {
+	background:#fff;
+}
+
 #layout {
 	overflow:hidden;
 	*zoom:1;
@@ -22,10 +26,13 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	border:1px solid #333;
 }	
 #banner {
-	height:200px;
+	width:auto;
+	height:310px;
+	margin:10px auto;
 }
 #slogon {
-	
+	font-size:0px;
+	height:0px;
 }
 #content {
 	overflow:hidden;
@@ -64,7 +71,9 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
 	color:#000;
 	line-height:16px;
-	padding:13px 13px 11px 13px;	
+	padding:11px 13px 11px 13px !important;
+	+padding:16px 13px 16px 13px;
+
 
 }
 #intro .description p {
@@ -105,6 +114,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 
 #gallery .overflow ul {
 	margin-top:18px;
+	width:8000px;
 	*zoom:1;
 }
 
@@ -119,6 +129,13 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	padding:4px;
 	background:#fff;
 	border:1px solid #bfc1be;
+	width:172px;
+	height:232px;
+	overflow:hidden;
+     -moz-box-shadow: 0px 0px 6px #c0c1bf; 
+  -webkit-box-shadow: 0px 0px 6px #c0c1bf; 
+          box-shadow: 0px 0px 6px #c0c1bf; 
+
 }
 
 #gallery .overflow ul li .txt {
@@ -152,6 +169,12 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	
 }
 
+#layout #disqus_thread {
+	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+	font-size:14px;
+	color:#000;
+}
+
 .grid {
 	border:1px solid #47723a;
 	background:#fff;
@@ -166,6 +189,7 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 	font-weight:normal;
 	font-size:18px;
 	font-family:"黑体","Microsoft Yahei","Arial","Tahoma";
+	text-shadow: 1px 1px 3px #000;
 }
 .hd_01.spe {
 	border:none;
