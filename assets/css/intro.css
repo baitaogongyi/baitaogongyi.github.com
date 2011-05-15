@@ -15,9 +15,9 @@ body {
 	*zoom:1;
 	border:1px solid #000;
 	width:930px;
-	margin:0 auto;
-	background:#81c46c;
-	padding:0px 10px 40px 10px;
+	margin:10px auto;
+	padding:310px 10px 40px 10px;
+	background:url("../images/banner.png") center top no-repeat #81c46c;;
 }
 
 #debug {
@@ -25,15 +25,6 @@ body {
 	width:auto;
 	border:1px solid #333;
 }	
-#banner {
-	width:auto;
-	height:310px;
-	margin:10px auto;
-}
-#slogon {
-	font-size:0px;
-	height:0px;
-}
 #content {
 	overflow:hidden;
 	margin-bottom:10px;
