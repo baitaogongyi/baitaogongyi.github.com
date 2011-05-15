@@ -73,8 +73,9 @@ body {
 	font-family:"宋体","Microsoft Yahei","Arial","Tahoma";
 	color:#000;
 	line-height:20px;
+	*zoom:1;
 	padding:6px 10px 6px 10px !important;
-	+padding:16px 13px 16px 13px;
+	+padding:11px 10px 11px 10px;
 }
 #intro .description p {
 	text-indent:29px;
