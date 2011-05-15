@@ -50,6 +50,15 @@ body {
 	padding:0px 7px;
 	*zoom:1;
 }
+#thoughts {
+	width:928px;
+	margin-bottom:10px;
+	height:405px;
+	background:url("../images/thoughts.jpg") center bottom no-repeat #6eb059;
+}
+#thoughts .hd_01 {
+	border:none;
+}
 #intro {
 	float:left;
 	width:305px;
