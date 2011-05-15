@@ -69,17 +69,21 @@ body {
 }
 
 #intro .description {
-	font-size:14px;
+	font-size:12px;
 	font-family:"宋体","Microsoft Yahei","Arial","Tahoma";
 	color:#000;
 	line-height:20px;
-	padding:11px 13px 11px 13px !important;
+	padding:6px 10px 6px 10px !important;
 	+padding:16px 13px 16px 13px;
-
-
 }
 #intro .description p {
 	text-indent:29px;
+}
+#handbook {
+	width:auto;
+	display:block;
+	height:50px;
+	background:url("../images/btn_download.jpg") center top no-repeat;
 }
 #gallery {
 	min-height:345px;
